@@ -1,0 +1,24 @@
+# OSX
+#
+.DS_Store
+
+
+# IntelliJ
+#
+build/
+.idea
+*.iml
+
+# node.js
+#
+node_modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Misc
+#
+.git
+.env
+.google-services.json
+.service-account.json
