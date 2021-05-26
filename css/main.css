@@ -1,0 +1,700 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+#toolbar {
+  display: none; }
+
+#main-header {
+  display: none; }
+
+#main-article {
+  top: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0 !important; }
+
+#section-1 .container {
+  background: none;
+  padding: 0;
+  width: 100%;
+  overflow: visible;
+  margin: 0 !important; }
+
+.jumper {
+  display: none; }
+
+.container p {
+  max-width: none; }
+
+#toolbar {
+  display: block; }
+
+#main-header {
+  display: block; }
+
+.page-actions {
+  padding: 0;
+  display: block;
+  width: 100%; }
+
+.page-actions ul {
+  float: right;
+  width: auto; }
+
+.sprite-page-actions {
+  background-image: url("http://a2.espncdn.com/i/eticket/iditarod/images/social-icons.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  height: 22px;
+  padding: 10px 0;
+  position: relative;
+  width: 25px; }
+
+.sprite-page-actions.facebook {
+  background-position: 0 10px; }
+
+.sprite-page-actions.facebook:hover {
+  background-position: 0 -27px; }
+
+.sprite-page-actions.twitter {
+  background-position: -40px 10px; }
+
+.sprite-page-actions.twitter:hover {
+  background-position: -40px -27px; }
+
+.sprite-page-actions.comments {
+  background-position: -80px 10px; }
+
+.sprite-page-actions.comments:hover {
+  background-position: -80px -27px; }
+
+.sprite-page-actions.email {
+  background-position: -118px 10px; }
+
+.sprite-page-actions.email:hover {
+  background-position: -118px -27px; }
+
+.mod-page-actions {
+  height: 44px;
+  position: absolute;
+  right: 10px;
+  top: 0; }
+
+.mod-page-actions li {
+  float: left;
+  height: 44px;
+  margin: 0 7px; }
+
+.mod-page-actions li a {
+  display: block;
+  float: left;
+  white-space: nowrap;
+  cursor: pointer; }
+
+.mod-page-actions li a .sprite-page-actions {
+  float: left;
+  margin: 0 4px 0 0; }
+
+.mod-page-actions li a .label {
+  float: left; }
+
+.mod-page-actions li .count {
+  display: none !important; }
+
+#toolbar {
+  position: fixed;
+  height: 44px;
+  background: #000;
+  width: 100%;
+  z-index: 9999;
+  top: 0; }
+
+#toolbar > h1.logo {
+  margin-left: 20px;
+  width: 79px;
+  height: 34px;
+  padding-top: 10px; }
+
+#toolbar > h1.logo a {
+  display: block;
+  height: 100%;
+  text-indent: -9999em;
+  float: left; }
+
+#toolbar > h1.logo a.espn {
+  background: url("http://a2.espncdn.com/i/eticket/iditarod/images/espn_logo.png") no-repeat 0 0;
+  width: 79px;
+  height: 22px; }
+
+#toolbar .nav-chapters ul li {
+  float: left;
+  display: block;
+  height: 44px; }
+
+#toolbar .nav-chapters ul li.selected a {
+  border-bottom: 5px solid #6fcdf5;
+  color: #6fcdf5; }
+
+#toolbar .nav-chapters ul li a:hover {
+  color: #6fcdf5;
+  border-bottom: 5px solid #6fcdf5;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+#toolbar .nav-chapters ul li a span.num {
+  display: none; }
+
+#toolbar .nav-chapters ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  height: 44px;
+  padding: 8px 15px;
+  font: normal normal 14px/2em Klavika, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 0 solid #6fcdf5;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+#toolbar ul.social {
+  height: 44px;
+  position: absolute;
+  right: 5px;
+  top: 0; }
+
+#toolbar ul.social li {
+  height: 44px;
+  float: left;
+  margin: 0 7px; }
+
+#toolbar ul.social a {
+  background-image: url(http://a2.espncdn.com/i/eticket/iditarod/images/social-icons.png);
+  background-repeat: no-repeat;
+  padding: 10px 0;
+  display: block;
+  position: relative;
+  float: left;
+  width: 25px;
+  height: 22px; }
+
+#toolbar ul.social a.fb {
+  background-position: 0 10px; }
+
+#toolbar ul.social a:hover.fb {
+  background-position: 0 -27px; }
+
+#toolbar ul.social a.twitter {
+  background-position: -40px 10px; }
+
+#toolbar ul.social a:hover.twitter {
+  background-position: -40px -27px; }
+
+#toolbar ul.social a.comments {
+  background-position: -80px 10px; }
+
+#toolbar ul.social a:hover.comments {
+  background-position: -80px -27px; }
+
+#toolbar ul.social a.email {
+  background-position: -118px 10px; }
+
+#toolbar ul.social a:hover.email {
+  background-position: -118px -27px; }
+
+li.fb-comments,
+li.espn-email {
+  display: none; }
+
+/**/
+#toolbar {
+  z-index: 9998;
+  background: #e60e16; }
+
+#toolbar > h1.logo a.espn {
+  background: rgba(0, 0, 0, 0) url("http://a2.espncdn.com/prod/styles/pagetype/otl/20161007_goatbusters/images/espn_logo-2x.png") no-repeat scroll 0 1px/79px 21px;
+  width: 79px;
+  height: 22px; }
+
+.mod-page-actions {
+  top: 11px; }
+
+.mod-page-actions li a .sprite-page-actions {
+  margin: 0;
+  height: 20px; }
+
+.sprite-page-actions {
+  background: url("http://espn.go.com/prod/styles/pagetype/otl/20150212_barkley/images/social-icons-redesign3.png");
+  background-repeat: no-repeat; }
+
+.sprite-page-actions.facebook,
+.sprite-page-actions.twitter,
+.sprite-page-actions.comments,
+.sprite-page-actions.email {
+  opacity: 1; }
+
+.sprite-page-actions:hover {
+  opacity: .7; }
+
+.sprite-page-actions.facebook,
+.sprite-page-actions.facebook:hover {
+  background-position: 0 -6px; }
+
+.sprite-page-actions.twitter,
+.sprite-page-actions.twitter:hover {
+  background-position: -49px -6px; }
+
+.sprite-page-actions.comments,
+.sprite-page-actions.comments:hover {
+  background-position: -88px -6px; }
+
+.sprite-page-actions.email,
+.sprite-page-actions.email:hover {
+  background-position: -130px -6px; }
+
+@media screen and (max-width: 619px) {
+  #toolbar > h1.logo {
+    margin: 0 0 0 20px; }
+  #toolbar ul.mod-page-actions {
+    display: block; }
+    .touch #toolbar ul.mod-page-actions {
+      display: none; }
+  .sprite-page-actions.email,
+  .sprite-page-actions.comments {
+    display: none; }
+  .fb-comments,
+  .espn-email {
+    display: none; } }
+
+#toolbar {
+  position: absolute;
+  background-color: transparent;
+  top: 7px; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  background-color: #000;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: #FFF;
+  font-size: 17px;
+  line-height: 1em;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+li {
+  display: block; }
+
+#__bs_notify__ {
+  opacity: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.aliasing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.box-size, .text-content-container, .sticky-slideshow__txt {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.subhead.alt {
+  font-weight: 400; }
+
+a.espn:hover {
+  opacity: .75; }
+
+.staples-center {
+  position: relative; }
+  .staples-center .body-text {
+    font-size: 17px;
+    line-height: 1.65em; }
+
+.section-grey-bg {
+  background-color: #333; }
+
+.last-section {
+  padding-bottom: 80px; }
+  .last-section .body-text:last-child {
+    margin-bottom: 0; }
+
+.text-content-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 9px; }
+  @media all and (min-width: 350px) {
+    .text-content-container {
+      padding-left: 18px;
+      padding-right: 18px; } }
+  @media all and (min-width: 400px) {
+    .text-content-container {
+      padding-left: 23px;
+      padding-right: 23px; } }
+
+.section-header {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  margin-bottom: 22px; }
+  @media all and (min-width: 600px) {
+    .section-header {
+      margin-bottom: 40px; } }
+  .section-header__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
+  .section-header__image {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .section-header:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    opacity: .9;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,000000+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(10, 10, 10, 0) 0%, #0a0a0a 100%);
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 10, 10, 0)), to(#0a0a0a));
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0) 0%, #0a0a0a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ }
+  .section-header .subhead {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    width: 100%;
+    z-index: 1; }
+    @media all and (min-width: 600px) {
+      .section-header .subhead {
+        font-size: 50px;
+        line-height: 46px;
+        bottom: 20px; } }
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden; }
+  .header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    opacity: .7;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,000000+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, #1e1e1e 0%, rgba(30, 30, 30, 0) 100%);
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(rgba(30, 30, 30, 0)));
+    background: linear-gradient(to bottom, #1e1e1e 0%, rgba(30, 30, 30, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .header:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    opacity: .7;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,000000+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(30, 30, 30, 0) 0%, #1e1e1e 100%);
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 30, 30, 0)), to(#1e1e1e));
+    background: linear-gradient(to bottom, rgba(30, 30, 30, 0) 0%, #1e1e1e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ }
+  .header__video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .header__text-container {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    text-align: center;
+    z-index: 1; }
+    @media all and (min-height: 700px) {
+      .header__text-container {
+        bottom: 120px; } }
+  .header__button {
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: 13px;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #da0a16;
+    background-color: transparent;
+    text-indent: -999px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("http://a.espncdn.com/prod/styles/pagetype/otl/20200226_nfl_combine/img/icon-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+    background-position: center;
+    -webkit-transition: border-color .15s linear;
+    -moz-transition: border-color .15s linear;
+    transition: border-color .15s linear; }
+    .no-touch .header__button:hover {
+      border-color: #FFF; }
+
+.intro-text {
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Publico Text Web'; }
+  @media all and (min-width: 350px) {
+    .intro-text {
+      margin-top: 45px;
+      margin-bottom: 45px; } }
+
+.story-credits {
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  font-family: "BentonSans";
+  text-align: center;
+  display: block;
+  margin-top: 40px; }
+
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #000;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .footer__headline {
+    color: #CCC;
+    margin-bottom: 10px;
+    font-size: 19px !important;
+    letter-spacing: 0.2px !important; }
+  .footer ul li {
+    margin-bottom: 10px; }
+    .footer ul li a {
+      font-size: 15px !important;
+      font-family: "BentonSans";
+      color: #FFF;
+      line-height: 1.3em;
+      text-decoration: none;
+      border-bottom: 1px dashed #da0a16;
+      -webkit-transition: border-color .15s linear;
+      -moz-transition: border-color .15s linear;
+      transition: border-color .15s linear; }
+      .footer ul li a:hover {
+        border-color: #FFF; }
+
+figure {
+  margin: 0 0 38px 0; }
+  figure:last-child {
+    margin-bottom: 0; }
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; }
+  figure figcaption {
+    color: #FFF; }
+
+.sticky-slideshow {
+  position: relative;
+  margin-top: 37px; }
+  .sticky-slideshow.sticky--bottom .sticky-slideshow__image-column {
+    bottom: 0; }
+  .sticky-slideshow.sticky .sticky-slideshow__image-column {
+    position: fixed;
+    top: 0; }
+  .sticky-slideshow__timer {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%; }
+  @media all and (max-width: 599px) {
+    .sticky-slideshow__text-column {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-top: 50vh; } }
+  .sticky-slideshow__text-item {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    color: #FFF; }
+  .sticky-slideshow__txt {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    padding: 0 40px; }
+    @media all and (max-width: 599px) {
+      .sticky-slideshow__txt span {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 1px 0;
+        white-space: pre-wrap; }
+        .section-grey-bg .sticky-slideshow__txt span {
+          background-color: rgba(51, 51, 51, 0.85); }
+          .section-grey-bg .sticky-slideshow__txt span:before {
+            background-color: rgba(51, 51, 51, 0.85); }
+        .sticky-slideshow__txt span:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -4px;
+          width: 4px;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.75); } }
+    @media all and (min-width: 600px) {
+      .sticky-slideshow__txt {
+        padding: 0;
+        top: 50%;
+        left: 61%;
+        width: 35%; } }
+    @media all and (min-width: 1500px) {
+      .sticky-slideshow__txt {
+        padding: 0;
+        top: 50%;
+        left: 66%;
+        width: 25%; } }
+    .sticky-slideshow__txt.small {
+      font-family: "BentonSans";
+      font-weight: 400;
+      font-size: 17px !important;
+      line-height: 24px !important;
+      letter-spacing: 0 !important; }
+  .sticky-slideshow__image-column {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    will-change: position; }
+    @media all and (min-width: 600px) {
+      .sticky-slideshow__image-column {
+        width: 60vw; } }
+  .sticky-slideshow__image-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%; }
+    .sticky-slideshow__image-container img, .sticky-slideshow__image-container video {
+      position: absolute;
+      width: auto;
+      height: auto;
+      max-width: 90%;
+      max-height: 90vh;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      -moz-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0);
+      opacity: 0;
+      -webkit-transition: opacity .25s linear;
+      -moz-transition: opacity .25s linear;
+      transition: opacity .25s linear; }
+      .sticky-slideshow__image-container img.selected, .sticky-slideshow__image-container video.selected {
+        opacity: 1; }
+  .sticky-slideshow.no-js {
+    padding-top: 50px;
+    padding-bottom: 38px; }
+    @media all and (min-width: 600px) {
+      .sticky-slideshow.no-js {
+        padding-top: 80px;
+        padding-bottom: 60px; } }
+  .sticky-slideshow .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 9px; }
+    @media all and (min-width: 350px) {
+      .sticky-slideshow .content-container {
+        padding-left: 18px;
+        padding-right: 18px; } }
+    @media all and (min-width: 400px) {
+      .sticky-slideshow .content-container {
+        padding-left: 23px;
+        padding-right: 23px; } }
+
+.circle-indicator {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: url("http://a.espncdn.com/prod/styles/pagetype/otl/20200226_nfl_combine/img/circle-bg.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  .circle-indicator__mask {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden; }
+    .circle-indicator__mask--left {
+      left: 0; }
+      .circle-indicator__mask--left .circle-indicator__inner {
+        top: 0;
+        left: 100%;
+        -webkit-transform-origin: 0 50%;
+        -moz-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        background-image: url("http://a.espncdn.com/prod/styles/pagetype/otl/20200226_nfl_combine/img/circle-right.png");
+        background-size: 10px 20px;
+        background-repeat: no-repeat; }
+    .circle-indicator__mask--right {
+      left: 50%; }
+      .circle-indicator__mask--right .circle-indicator__inner {
+        top: 0;
+        left: -100%;
+        -webkit-transform-origin: 100% 50%;
+        -moz-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        background-image: url("http://a.espncdn.com/prod/styles/pagetype/otl/20200226_nfl_combine/img/circle-left.png");
+        background-size: 10px 20px;
+        background-repeat: no-repeat; }
+  .circle-indicator__inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+
+.body-text {
+  font-family: 'Georgia';
+  font-size: 19px !important;
+  line-height: 29px !important; }

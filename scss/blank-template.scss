@@ -1,0 +1,33 @@
+// hide the top toolbar
+#toolbar {
+  display: none;
+}
+
+// hide an invisible div that is used with the #toolbar
+#main-header {
+  display: none;
+}
+
+#main-article {
+  top: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0 !important;
+}
+
+#section-1 .container {
+  background: none;
+  padding: 0;
+  width: 100%;
+  overflow: visible;
+  margin: 0 !important;
+}
+
+// hide the jumper
+.jumper {
+  display: none;
+}
+
+
+.container p {
+  max-width: none;
+}

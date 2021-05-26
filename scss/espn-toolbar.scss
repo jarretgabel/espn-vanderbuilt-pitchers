@@ -1,0 +1,276 @@
+#toolbar {
+  display: block;
+}
+
+// show an invisible div that is used with the #toolbar
+#main-header {
+  display: block;
+}
+
+.page-actions {
+    padding: 0;
+    display: block;
+    width: 100%
+}
+.page-actions ul {
+    float: right;
+    width: auto
+}
+.sprite-page-actions {
+    background-image: url("http://a2.espncdn.com/i/eticket/iditarod/images/social-icons.png");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 22px;
+    padding: 10px 0;
+    position: relative;
+    width: 25px
+}
+.sprite-page-actions.facebook {
+    background-position: 0 10px
+}
+.sprite-page-actions.facebook:hover {
+    background-position: 0 -27px
+}
+.sprite-page-actions.twitter {
+    background-position: -40px 10px
+}
+.sprite-page-actions.twitter:hover {
+    background-position: -40px -27px
+}
+.sprite-page-actions.comments {
+    background-position: -80px 10px
+}
+.sprite-page-actions.comments:hover {
+    background-position: -80px -27px
+}
+.sprite-page-actions.email {
+    background-position: -118px 10px
+}
+.sprite-page-actions.email:hover {
+    background-position: -118px -27px
+}
+.mod-page-actions {
+    height: 44px;
+    position: absolute;
+    right: 10px;
+    top: 0
+}
+.mod-page-actions li {
+    float: left;
+    height: 44px;
+    margin: 0 7px
+}
+.mod-page-actions li a {
+    display: block;
+    float: left;
+    white-space: nowrap;
+    cursor: pointer
+}
+.mod-page-actions li a .sprite-page-actions {
+    float: left;
+    margin: 0 4px 0 0
+}
+.mod-page-actions li a .label {
+    float: left
+}
+.mod-page-actions li .count {
+    display: none !important
+}
+
+#toolbar {
+    position: fixed;
+    height: 44px;
+    background: #000;
+    width: 100%;
+    z-index: 9999;
+    top: 0
+}
+#toolbar>h1.logo {
+    // margin: 0 auto;
+    margin-left: 20px;
+    width: 79px;
+    height: 34px;
+    // text-align: center;
+    padding-top: 10px
+}
+#toolbar>h1.logo a {
+    display: block;
+    height: 100%;
+    text-indent: -9999em;
+    float: left
+}
+#toolbar>h1.logo a.espn {
+    background: url("http://a2.espncdn.com/i/eticket/iditarod/images/espn_logo.png") no-repeat 0 0;
+    width: 79px;
+    height: 22px
+}
+#toolbar .nav-chapters ul li {
+    float: left;
+    display: block;
+    height: 44px
+}
+#toolbar .nav-chapters ul li.selected a {
+    border-bottom: 5px solid #6fcdf5;
+    color: #6fcdf5
+}
+#toolbar .nav-chapters ul li a:hover {
+    color: #6fcdf5;
+    border-bottom: 5px solid #6fcdf5;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out
+}
+#toolbar .nav-chapters ul li a span.num {
+    display: none
+}
+#toolbar .nav-chapters ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 44px;
+    padding: 8px 15px;
+    font: normal normal 14px/2em Klavika, Helvetica, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 0 solid #6fcdf5;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out
+}
+#toolbar ul.social {
+    height: 44px;
+    position: absolute;
+    right: 5px;
+    top: 0
+}
+#toolbar ul.social li {
+    height: 44px;
+    float: left;
+    margin: 0 7px
+}
+#toolbar ul.social a {
+    background-image: url(http://a2.espncdn.com/i/eticket/iditarod/images/social-icons.png);
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    display: block;
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 22px
+}
+#toolbar ul.social a.fb {
+    background-position: 0 10px
+}
+#toolbar ul.social a:hover.fb {
+    background-position: 0 -27px
+}
+#toolbar ul.social a.twitter {
+    background-position: -40px 10px
+}
+#toolbar ul.social a:hover.twitter {
+    background-position: -40px -27px
+}
+#toolbar ul.social a.comments {
+    background-position: -80px 10px
+}
+#toolbar ul.social a:hover.comments {
+    background-position: -80px -27px
+}
+#toolbar ul.social a.email {
+    background-position: -118px 10px
+}
+#toolbar ul.social a:hover.email {
+    background-position: -118px -27px
+}
+
+li.fb-comments,
+li.espn-email {
+  display: none;
+}
+
+/**/
+
+#toolbar {
+  z-index: 9998;
+  background: #e60e16;
+}
+
+#toolbar>h1.logo a.espn {
+  background: rgba(0,0,0,0) url('http://a2.espncdn.com/prod/styles/pagetype/otl/20161007_goatbusters/images/espn_logo-2x.png') no-repeat scroll 0 1px / 79px 21px;
+  width: 79px;
+  height: 22px;
+}
+
+.mod-page-actions {
+  top: 11px;
+}
+
+
+.mod-page-actions li a .sprite-page-actions {
+  margin: 0;
+  height: 20px;
+}
+
+.sprite-page-actions {
+  background: url('http://espn.go.com/prod/styles/pagetype/otl/20150212_barkley/images/social-icons-redesign3.png');
+  background-repeat: no-repeat;
+}
+
+.sprite-page-actions.facebook,
+.sprite-page-actions.twitter,
+.sprite-page-actions.comments,
+.sprite-page-actions.email {
+  opacity: 1;
+}
+
+.sprite-page-actions:hover {
+  opacity: .7;
+}
+
+.sprite-page-actions.facebook,
+.sprite-page-actions.facebook:hover {
+  background-position: 0 -6px;
+}
+
+.sprite-page-actions.twitter,
+.sprite-page-actions.twitter:hover {
+  background-position: -49px -6px;
+}
+
+.sprite-page-actions.comments,
+.sprite-page-actions.comments:hover {
+  background-position: -88px -6px;
+}
+
+.sprite-page-actions.email,
+.sprite-page-actions.email:hover {
+  background-position: -130px -6px;
+}
+
+@media screen and (max-width: 619px) {
+  #toolbar > h1.logo {
+    margin: 0 0 0 20px;
+  }
+
+  #toolbar ul.mod-page-actions {
+    display: block;
+
+    @at-root .touch & {
+      display: none;
+    }
+  }
+
+  .sprite-page-actions.email,
+  .sprite-page-actions.comments {
+    display: none;
+  }
+
+  .fb-comments,
+  .espn-email {
+      display: none;
+  }
+}
