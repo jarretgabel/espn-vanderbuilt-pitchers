@@ -500,7 +500,10 @@ a.espn:hover {
   background-color: #000;
   text-align: center;
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto; }
   .footer__headline {
     color: #CCC;
     margin-bottom: 10px;
@@ -698,3 +701,6 @@ figure {
   font-family: 'Georgia';
   font-size: 19px !important;
   line-height: 29px !important; }
+
+.yellow {
+  color: #F3D84E; }

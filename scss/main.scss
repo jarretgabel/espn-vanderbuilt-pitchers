@@ -401,6 +401,9 @@ a.espn {
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
 
   &__headline {
     color: #CCC;
@@ -710,4 +713,8 @@ figure {
   font-family: 'Georgia';
   font-size: 19px !important;
   line-height: 29px !important;
+}
+
+.yellow {
+  color: #F3D84E;
 }
