@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp"
   },
   "author": "",
   "license": "ISC"
