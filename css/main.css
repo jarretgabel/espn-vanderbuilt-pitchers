@@ -372,7 +372,9 @@ a.espn:hover {
   .section-header__image {
     position: absolute;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    background-position: center top;
+    background-size: cover; }
   .section-header:after {
     content: "";
     position: absolute;
@@ -394,10 +396,11 @@ a.espn:hover {
     bottom: 15px;
     text-align: center;
     width: 100%;
-    z-index: 1; }
+    z-index: 1;
+    font-size: 48px; }
     @media all and (min-width: 600px) {
       .section-header .subhead {
-        font-size: 50px;
+        font-size: 58px;
         line-height: 46px;
         bottom: 20px; } }
 
@@ -493,6 +496,8 @@ a.espn:hover {
   text-align: center;
   display: block;
   margin-top: 40px; }
+  .story-credits + .story-credits {
+    margin-top: 16px; }
 
 .footer {
   padding-top: 80px;
@@ -550,7 +555,13 @@ figure {
     height: 20px;
     border-radius: 50%;
     top: 50%;
-    left: 50%; }
+    left: 50%;
+    opacity: 1;
+    -webkit-transition: opacity 0.1s linear 0.1s;
+    -moz-transition: opacity 0.1s linear 0.1s;
+    transition: opacity 0.1s linear 0.1s; }
+    .sticky-slideshow__timer.disabled {
+      opacity: 0; }
   @media all and (max-width: 599px) {
     .sticky-slideshow__text-column {
       -webkit-box-sizing: border-box;

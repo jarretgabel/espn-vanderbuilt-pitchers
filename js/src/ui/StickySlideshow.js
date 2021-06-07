@@ -29,7 +29,7 @@ function StickySlideshow(node) {
     buildTimer();
     buildTextColumn();
     buildTextItems();
-
+    
     addListeners();
     handleResize();
     // setTimeout(handleResize, 500);
@@ -186,6 +186,18 @@ function StickySlideshow(node) {
 
     if (asset.currentTime) {
       asset.currentTime = 0;
+    }
+
+    const container = asset.closest('.sticky-slideshow__image-column');
+
+    const timer = container.querySelector('.sticky-slideshow__timer');
+
+    if(asset.src.indexOf('.jpg') > -1) {
+      console.log('remove');
+      timer.classList.add('disabled');
+    } else {
+      console.log('add');
+      timer.classList.remove('disabled');
     }
 
     asset.play();

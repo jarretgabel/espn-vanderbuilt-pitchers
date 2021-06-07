@@ -245,7 +245,7 @@ function SectionHeader(node) {
       var baseStr = document.querySelector('.staples-center').getAttribute('data-tracking-name');
       var fullStr = 'espncom:' + baseStr + ':' + str;
 
-      console.log('tracking --', fullStr);
+      // console.log('tracking --', fullStr);
 
       espn.track.trackLink({
         linkPos: fullStr,
@@ -276,7 +276,8 @@ function SectionHeader(node) {
 
       _asset.style.width = Math.round(destinWidth) + 'px';
       _asset.style.height = Math.round(destinHeight) + 'px';
-      _asset.style.top = Math.round((maxHeight - destinHeight) * .5) + 'px';
+      // _asset.style.top = Math.round((maxHeight - destinHeight) * 0.5) + 'px';
+      _asset.style.top = 0;
       _asset.style.left = Math.round((maxWidth - destinWidth) * .5) + 'px';
     }
   }
@@ -371,7 +372,7 @@ function StickySlideshow(node) {
     buildTimer();
     buildTextColumn();
     buildTextItems();
-
+    
     addListeners();
     handleResize();
     // setTimeout(handleResize, 500);
@@ -530,7 +531,16 @@ function StickySlideshow(node) {
       asset.currentTime = 0;
     }
 
-    asset.play();
+    const container = asset.closest('.sticky-slideshow__image-column');
+
+    const timer = container.querySelector('.sticky-slideshow__timer');
+
+    if(asset.src.indexOf('.jpg') > -1) {
+      timer.classList.add('disabled');
+    } else {
+      timer.classList.remove('disabled');
+      asset.play();
+    }
 
     _currentAsset = asset;
   }

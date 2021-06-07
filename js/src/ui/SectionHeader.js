@@ -63,7 +63,7 @@ function SectionHeader(node) {
       var baseStr = document.querySelector('.staples-center').getAttribute('data-tracking-name');
       var fullStr = 'espncom:' + baseStr + ':' + str;
 
-      console.log('tracking --', fullStr);
+      // console.log('tracking --', fullStr);
 
       espn.track.trackLink({
         linkPos: fullStr,
@@ -94,7 +94,8 @@ function SectionHeader(node) {
 
       _asset.style.width = Math.round(destinWidth) + 'px';
       _asset.style.height = Math.round(destinHeight) + 'px';
-      _asset.style.top = Math.round((maxHeight - destinHeight) * .5) + 'px';
+      // _asset.style.top = Math.round((maxHeight - destinHeight) * 0.5) + 'px';
+      _asset.style.top = 0;
       _asset.style.left = Math.round((maxWidth - destinWidth) * .5) + 'px';
     }
   }
