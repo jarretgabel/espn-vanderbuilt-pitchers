@@ -715,3 +715,13 @@ figure {
 
 .yellow {
   color: #F3D84E; }
+
+p a {
+  text-decoration: none;
+  border-bottom: 1px solid #F3D84E;
+  -webkit-transition: border-color .15s linear;
+  -moz-transition: border-color .15s linear;
+  transition: border-color .15s linear;
+  color: white; }
+  p a:hover {
+    border-color: #FFF; }

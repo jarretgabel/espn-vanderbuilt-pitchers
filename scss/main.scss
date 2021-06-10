@@ -422,7 +422,6 @@ a.espn {
         line-height: 1.3em;
         text-decoration: none;
         border-bottom: 1px dashed #da0a16;
-
         transition: border-color .15s linear;
 
         &:hover {
@@ -721,4 +720,15 @@ figure {
 
 .yellow {
   color: #F3D84E;
+}
+
+p a {
+  text-decoration: none;
+  border-bottom: 1px solid #F3D84E;
+  transition: border-color .15s linear;
+  color: white;
+
+  &:hover {
+    border-color: #FFF;
+  }
 }
